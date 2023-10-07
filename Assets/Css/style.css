@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,900&family=Nunito:wght@300;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+html{
+    max-width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: nunito, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(190, 185, 185), rgb(53, 53, 51));
+}
+.Navbar{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+}
+.hamburger{
+    cursor: pointer;
+    margin-top: 10px;
+    
+    }
+    .hamburger .line{
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin-bottom: 5px;
+        background-color: white;
+        
+    }
+    .Nav-link{
+        display: none;
+    }
+
+    .Navbar img{
+        height: 50px;
+        width: 150px;
+    }
+
+.main{
+    color: white;
+    position: relative;
+    padding-bottom: 0%;
+    width: 100%;
+    height: 85vh;
+}
+.side-right{
+    position: relative;
+    margin-left: 10%;
+    margin-top: 30%;
+}
+
+.right{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    z-index: 1;
+    margin-bottom: 5px;
+}
+.side-left{
+    position: absolute;
+    margin-bottom: -2px;
+    padding-bottom: -3px;
+    border: none;
+}
+ .content{
+    position: relative;
+    margin-bottom: -20px;
+    height: 85vh;
+    width: 100%;
+}
+.side-right p{
+    line-height: 3px;  
+}
+.buttons{
+    display: flex;
+    font-family: nunito, sans-serif;
+    
+}
+#post{
+    background-color: #ec0741;
+    color: white;
+    border: none;
+    font-family: nunito, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#Search{
+    margin-left: 20px;
+    background-color: white;
+    color: #ec0741;
+    border: none;
+    font-family: nunito, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen  and (min-width:1024px) {
+
+    .hamburger{
+        display: none;
+    }
+
+    .Nav-link{
+
+        display: flex;
+    }
+    .Nav-link a{
+        text-decoration: none;
+        padding: 10px;
+        color: red;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .Nav-link a:hover{
+        
+        color: white;
+        
+    }
+    
+
+
+    .main{
+        color: white;
+        display: flex;
+        padding-bottom: 0%;
+        width: 100%;
+        height: 85vh;
+        padding-right: 80px;
+    }
+
+    .side-right{
+        position: relative;
+        margin-top: 15%;
+        margin-left: 0px;
+        width: 50%;
+        
+    }
+    .side-right h2{
+        font-size: 35px;
+        
+    }
+    .side-right p{
+        font-size: 20px;
+        line-height: 5px;
+        
+    }
+
+    .side-left{
+        position: relative;
+        margin-bottom: 0px;
+        width: 50%;
+    }
+    .Navbar{
+        
+        padding-left: 80px;
+        padding-right: 80px;
+        
+    }
+
+    #post{
+       
+        height: 40px;
+        width: 100px;
+        font-size: 20px;
+        
+    }
+    #Search{
+        height: 40px;
+        width: 100px;
+        font-size: 20px;
+    }
+    
+}
+
+@media screen  and (max-width:768px) {
+    .side-right{
+        position: absolute;
+        margin-left: 10%;
+        margin-top: 40%;
+    }
+
+}
+@media screen  and (max-width:390px) {
+    .side-right{
+        position: absolute;
+        margin-left: 10%;
+        margin-top: 70%;
+    }
+
+}
