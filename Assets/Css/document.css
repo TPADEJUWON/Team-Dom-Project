@@ -12,16 +12,19 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: nunito, sans-serif;
-    background-image: linear-gradient(to bottom, rgb(190, 185, 185), rgb(53, 53, 51));
+    
 }
 .Navbar{
     width: 100%;
-    height: 15vh;
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 15px;
+    background-color: rgb(173, 165, 165);
+    position: fixed;
+    z-index: 999;
 }
 .hamburger{
     cursor: pointer;
@@ -44,6 +47,104 @@ body{
         height: 50px;
         width: 150px;
     }
+.welcome{
+    width: 100%;
+    height: 30vh;
+    margin-top: 12vh;
+}
+
+.welcome img{
+    width: 100%;
+    height: 100%;
+}
+    .main{
+        display: flex;
+        width: 100%;
+        
+        
+        
+
+    }
+
+    .right{
+        
+        width: 85%;
+        display: block;
+        right: 0;
+        margin-left: 16%;
+
+    }
+    .left{
+        width: 15%;
+        background-color: rgb(223, 222, 222);
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0; 
+        z-index: 1; 
+        padding-top: 12vh;
+        padding-left: 10px;
+        
+}
+        
+    }
+    .icons{
+        display: flex;
+        width: 80%;
+        padding-left: 10%;
+        font-size: 17px;
+        font-weight: 600;
+        align-items: center;
+    }
+
+    .icons i{
+        display: inline;
+        
+    }
+
+    .departments{
+        width: 100%;
+        border: 1px rgb(59, 56, 56) solid;
+        margin-top: 40px;
+        padding: 20px;
+    }
+    .units{
+        width: 100%;
+        height: 50vh;
+        box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+    .units img{
+        width: 100%;
+        height: 60%;
+        
+    }
+    .units h2{
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+
+    }
+    .units button{
+        font-weight: 300;
+        font-size: 16px;
+        text-align: center;
+        background-color: white;
+        color: red;
+        border: 1px solid red;
+        align-self: center;
+        width: 80%;
+        height: 40px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10px;
+        
+    }
+.but{
+    display: block;
+}
+    
 
 
 
@@ -75,6 +176,17 @@ body{
             
             padding-left: 80px;
             padding-right: 80px;
+            
+        }
+
+        .departments{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .units{
+            width: 27%;
+            margin: 30px;
             
         }
         
