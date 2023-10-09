@@ -49,7 +49,7 @@ body{
     }
 .welcome{
     width: 100%;
-    height: 30vh;
+    height: 35vh;
     margin-top: 12vh;
 }
 
@@ -87,7 +87,7 @@ body{
         
 }
         
-    }
+    
     .icons{
         display: flex;
         width: 80%;

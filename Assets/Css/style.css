@@ -22,6 +22,7 @@ body{
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 15px;
+
 }
 .hamburger{
     cursor: pointer;
@@ -111,6 +112,83 @@ body{
     cursor: pointer;
 }
 
+.Login{
+    display: block;
+    background-color: white;
+    width: 70%;
+    height: 50vh;
+    border-radius: 10px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: 600;
+    font-size: 15px;
+}
+.Login img{
+    width: 40%;
+    height: 7vh;
+}
+.Login input{
+    width: 100%;
+    height: 5vh;
+}
+
+.email-form{
+    margin-top: 20px;
+    width: 100%;
+}
+.email-form input{
+    
+    width: 100%;
+    font-size: 20px;
+    font-family: nunito, sans-serif;
+    font-weight: 500;
+}
+.password-form{
+    margin-top: 20px;
+    width: 100%;
+}
+.Sign button {
+    margin-top: 20px;
+    background-color: #ec0741;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 5vh;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: nunito, sans-serif;
+    cursor: pointer;
+}
+
+#forgot{
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#logo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#logo i{
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+
+body .aim{
+    background-color: white;
+    color: white;
+}
+
 @media screen  and (min-width:1024px) {
 
     .hamburger{
@@ -189,6 +267,8 @@ body{
     }
     
 }
+
+
 
 @media screen  and (max-width:768px) {
     .side-right{

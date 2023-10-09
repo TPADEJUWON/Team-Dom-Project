@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sterling-Resolution</title>
     <link rel="stylesheet" href="/Assets/Css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav class="Navbar">
@@ -28,14 +29,39 @@
 </div>
 
 <div class="side-right">
+<div class="go">
     <p> Welcome to Sterling </p>
     <h2>Resolution Documentation System</h2>
     <div class="buttons">
-    <button id="post">Post</button>
-    <button id="Search">Search</button>
+    <button id="post">Login</button>
+</div>
+</div>
+<div>
+    <form class="Login hide">
+        <div id="logo">
+        <img src="/Assets/Images/Sterling-Logo_.png"/> <br>
+        <i id="cancel" class="fas fa-times"></i>
+    </div>
+        <div class="email-form">
+        <label for="email">Email</label> <br>
+        <input name="email" class="form" type="email"> <br>
+    </div>
+    <div class="password-form">
+        <label for="password">Password</label> <br>
+        <input name="password" class="form" type="password">
+    </div>
+    <div class="Sign">
+        <button>Sign in</button>
+    </div>
+    <p id="forgot">Forgot Password ? <a href="/">Click here</a></p>
+    </form>
 </div>
 </div>
     </section>
+    
+    
+
+    <script src="/Assets/Js/script.js"></script>
 
 </body>
 </html>
