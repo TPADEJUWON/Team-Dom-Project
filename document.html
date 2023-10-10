@@ -10,17 +10,33 @@
 </head>
 <body>
     <nav class="Navbar">
-        <img src="/Assets/Images/Sterling-Logo_.png"/>
+        <div class="left-nav">
+        <img src="/Assets/Images/sterlingtrds.png"/>
         <div class="hamburger">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
         </div>
+    </div>
+    <div class="right-nav">
+        <form action="#" class="search_form"><!-- Search -->
+            <input type="text" placeholder="Search unit" name="unit search" id="searchUnit">
+            <i class="fas fa-search" id="searchBtn"></i>
+        </form><!-- Search End -->
+        <div class="logout">
+        <i class="fas fa-sign-out-alt"></i>
+        <a href="/index.html">Logout</a>
+    </div>
+    </div>
+        
+        <!--
         <div class="Nav-link">
             <a href="/index.html">Home</a>
             <a href="#">Document</a>
             <a href="#">Search</a>
         </div>
+        -->
+
     </nav>
 
     <section class="main">
@@ -28,81 +44,134 @@
         <!--For the left side bar-->
         <div class="left">
             <div class="icons">
-                <p>Home</p>
                 <i class="fas fa-home"></i>
+                <p>Home</p>
+                
                 
             </div>
             <div class="icons">
-                <p>Help</p>
                 <i class="fas fa-question-circle fa-lg"></i>
+                <p>Help</p>
+                
                 
             </div>
             <div class="icons">
-                <p>Rate Your Experience</p>
                 <i class="fas fa-star"></i>
+                <p>Rate Your Experience</p>
                 
             </div>
+
+                <div class="foot">
+                <p>&copy; 2023 All right reserved</p>
+                <img src="/Assets/Images/sterlingblack.png"/>
+                
+            </div>
+
+            
 
         </div>
 
 
-        <!--For the left side bar-->
+        <!--For the main page-->
         <div class="right">
             <div class="welcome">
-                <img src="/Assets/Images/Welcome.jpg" alt="welcome"/>
-            
+           <h2 id="well">Welcome!</h2>
+           <p>Select your unit below</p>
+    
             </div>
 
             <div class="departments">
                 <div class="units">
                     <img src="/Assets/Images/enduser.jpg"/>
                     <h2>End User Support</h2>
-                    <div class="but">
-                    <button> Upload Document</button>
+                   
+                    <button onclick="window.location.href ='/upload.html'" class="Upload"> Upload Document</button>
+                    <div class="View">
+                    <button onclick="window.location.href ='/viewDocument.html'" class="vew"> View Document</button>
+                    
+                </div>
                     <!--
                     <button>View Document</button>
                     -->
-                </div>
+                
                 </div>
                 <div class="units">
                     <img src="/Assets/Images/App Management.jpg"/>
                     <h2>App Management</h2>
-                    <button>Document</button>
+                <form action="/upload.html">
+                    <button class="Upload"> Upload Document</button>
+                </form>
+
+                <form action="/viewDocument.html">
+                    <div class="View">
+                    <button  class="vew"> View Document</button>
+                    
+                </div>
+            </form>
                 </div>
                 <div class="units">
                     <img src="/Assets/Images/ATM support.jpg"/>
                     <h2>ATM Support</h2>
-                    <button>Document</button>
+                    <button onclick="window.location.href ='/upload.html'" class="Upload"> Upload Document</button>
+                    <div class="View">
+                        <button onclick="window.location.href ='/viewDocument.html'" class="vew"> View Document</button>
+                    
+                </div>
                 </div>
                 <div class="units">
                     <img src="/Assets/Images/data.jpg"/>
                     <h2>Database Management</h2>
-                    <button>Document</button>
+                    <button onclick="window.location.href ='/upload.html'" class="Upload"> Upload Document</button>
+                    <div class="View">
+                        <button onclick="window.location.href ='/viewDocument.html'" class="vew"> View Document</button>
+                    
+                </div>
                 </div>
                 <div class="units">
                     <img src="/Assets/Images/IT ASSET.jpg"/>
                     <h2>Asset Management</h2>
-                    <button>Document</button>
+                    <button onclick="window.location.href ='/upload.html'" class="Upload"> Upload Document</button>
+                    <div class="View">
+                        <button onclick="window.location.href ='/viewDocument.html'" class="vew"> View Document</button>
+                    
+                </div>
                 </div>
                 <div class="units">
                     <img src="/Assets/Images/IT security.jpg"/>
                     <h2>IT Security</h2>
-                    <button>Document</button>
+                    <button onclick="window.location.href ='/upload.html'" class="Upload"> Upload Document</button>
+                    <div class="View">
+                        <button onclick="window.location.href ='/viewDocument.html'" class="vew"> View Document</button>
+                    
+                </div>
                 </div>
                 <div class="units">
                     <img src="/Assets/Images/network.jpg"/>
                     <h2>Network & Comms.</h2>
-                    <button>Document</button>
+                    <button onclick="window.location.href ='/upload.html'" class="Upload"> Upload Document</button>
+                    <div class="View">
+                        <button onclick="window.location.href ='/viewDocument.html'" class="vew"> View Document</button>
+                    
+                </div>
                 </div>
                 <div class="units">
                     <img src="/Assets/Images/document.jpg"/>
                     <h2>End User Support</h2>
-                    <button>Document</button>
+                    <button onclick="window.location.href ='/upload.html'" class="Upload"> Upload Document</button>
+                    <div class="View">
+                        <button onclick="window.location.href ='/viewDocument.html'" class="vew"> View Document</button>
+                    
+                </div>
                 </div>
                 <div class="units">
                     <img src="/Assets/Images/enduser.jpg"/>
                     <h2>End User Support</h2>
-                    <button>Document</button>
+                    <button onclick="window.location.href ='/upload.html'"  class="Upload"> Upload Document</button>
+                    <div class="View">
+                        <button onclick="window.location.href ='/viewDocument.html'" class="vew"> View Document</button>
+                    
+                </div>
+                 
                 </div>
             </div>
 

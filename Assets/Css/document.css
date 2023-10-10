@@ -19,10 +19,10 @@ body{
     height: 12vh;
     display: flex;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 15px;
-    background-color: rgb(173, 165, 165);
+    background-color: white;
     position: fixed;
     z-index: 999;
 }
@@ -33,10 +33,10 @@ body{
     }
     .hamburger .line{
         display: block;
-        width: 35px;
-        height: 5px;
-        margin-bottom: 5px;
-        background-color: white;
+        width: 25px;
+        height: 2px;
+        margin-bottom: 4px;
+        background-color: black;
         
     }
     .Nav-link{
@@ -45,18 +45,83 @@ body{
 
     .Navbar img{
         height: 50px;
-        width: 150px;
+        width: 120px;
+    }
+    .left-nav{
+        display: flex;
+        width: 20%;
+    }
+    .right-nav{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+    .right-nav a{
+        color: black;
+        text-decoration: none;
+        font-family: nunito, sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        margin-left: 10px;
+    
+    }
+    .logout{
+        margin-top: 18px;
+        display: flex;
+    }
+    form.search_form{
+        position: relative;
+        margin-top: 12px;
+    }
+    form.search_form input{
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 1em;
+        border: solid 1px #C6C6C6;
+        border-radius: 5px;
+        margin: 0 auto;
+        transition: .2s ease-in;
+    }
+    form.search_form input:focus{
+        border-color: #00808f;
+        outline: none;
+    }
+    form.search_form i{
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        color: #C6C6C6;
     }
 .welcome{
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     margin-top: 12vh;
+    background-image: url("/Assets/Images/Welcome.jpg");
+    background-size: cover;
+    padding-top: 10%;
+    padding-left: 2%;
+    color: white;
+    
+    
 }
 
-.welcome img{
-    width: 100%;
-    height: 100%;
+#well{
+    font-size: 40px;
+    line-height: 3px;
 }
+.welcome p{
+    font-size: 25px;
+    line-height: 3px;
+}
+
+
+
+.well p{
+    margin-top: 10px;
+}
+
+
+
     .main{
         display: flex;
         width: 100%;
@@ -86,20 +151,32 @@ body{
         padding-left: 10px;
         
 }
-        
+.left .foot{
+    width: 80%;
+    margin-top: 40vh;
+    font-size: 13px;
+    color: black;
+}    
+.foot img{
+    width: 50%;
+}    
     
     .icons{
         display: flex;
         width: 80%;
-        padding-left: 10%;
+        padding-left: 4%;
         font-size: 17px;
-        font-weight: 600;
+        font-weight: 500;
         align-items: center;
     }
 
     .icons i{
         display: inline;
         
+    }
+    .icons p{
+        margin-left: 15px;
+
     }
 
     .departments{
@@ -110,10 +187,11 @@ body{
     }
     .units{
         width: 100%;
-        height: 50vh;
+        height: 65vh;
         box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         margin-top: 50px;
+        
     }
     .units img{
         width: 100%;
@@ -126,7 +204,32 @@ body{
         text-align: center;
 
     }
-    .units button{
+    .Upload{
+        font-weight: 300;
+        font-size: 16px;
+        text-align: center;
+        background-color: #939597;
+        color: white;
+        border: 1px solid ;
+        align-self: center;
+        width: 80%;
+        height: 30px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        
+    }
+    .view{
+        display: flex;
+        border: none;
+    
+    }
+    
+    .vew{
         font-weight: 300;
         font-size: 16px;
         text-align: center;
@@ -135,15 +238,13 @@ body{
         border: 1px solid red;
         align-self: center;
         width: 80%;
-        height: 40px;
+        height: 30px;
         margin-left: 10%;
         margin-right: 10%;
-        margin-top: 10px;
-        
+        margin-top: 5px;
+        border-radius: 5px;
+        cursor: pointer;
     }
-.but{
-    display: block;
-}
     
 
 
@@ -151,9 +252,12 @@ body{
     @media screen  and (min-width:1024px) {
 
         .hamburger{
-            display: none;
-        }
-    
+        
+            margin-top: 25px;
+            margin-left: 80px;
+            
+            }
+
         .Nav-link{
     
             display: flex;
@@ -174,8 +278,8 @@ body{
       
         .Navbar{
             
-            padding-left: 80px;
-            padding-right: 80px;
+            padding-left: 20px;
+            padding-right: 20px;
             
         }
 
