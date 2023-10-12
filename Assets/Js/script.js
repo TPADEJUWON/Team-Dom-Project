@@ -4,6 +4,9 @@ const side_right = document.querySelector('.go')
 const cancel = document.querySelector('#cancel')
 const doc = document.querySelector('#doc')
 const content = document.querySelector('.content')
+const hamburger = document.querySelector('.hamburger')
+const nav = document.querySelector('.Nav-link')
+const sign = document.querySelector('#bot')
 
 // Add funtion to pop-up login form
 const popUp = () =>{
@@ -21,6 +24,12 @@ const cancelForm= () =>{
     log.classList.add('hide') 
 }
 
+
+//hambugger
+hamburger.onclick = () =>{
+nav.classList.toggle('hided')
+}
+
 //cancel login form
 cancel.onclick= () =>{
     cancelForm();
@@ -36,23 +45,32 @@ doc.onclick= () =>{
 
 // Define an array of image URLs
 const imageUrls = [
-    '/Assets/Images/Debbie.png',
-    '/Assets/Images/tech.png',
-    // Add more image URLs as needed
+    '/Assets/Images/guy.png',
+    '/Assets/Images/temi.png',
+    '/Assets/Images/guy2.png',
+    
   ];
   
-  let currentImageIndex = 0;
+  let Index = 0;
   
   function changeImage() {
-    // Change the background image of the container
-    content.src = imageUrls[currentImageIndex];
+    content.src = imageUrls[Index];
 
-  // Increment the image index, or loop back to the first image
-  currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+    Index = (Index + 1) % imageUrls.length;
 }
 
-// Call the changeImage function initially
 changeImage();
-
-// Set up a timer to change the image every 5 seconds (5000 milliseconds)
 const imageChangeInterval = setInterval(changeImage, 5000);
+
+
+//Sign in notice
+sign.onclick = () =>{
+
+    Swal.fire(
+        'Good job!',
+        'Your resolution has been documented',
+        'success'
+      )
+
+      
+}

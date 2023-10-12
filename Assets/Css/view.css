@@ -145,16 +145,61 @@ body{
 
     }
     .post{
-        width: 100%;
+        width: 90%;
         text-align: justify;
         line-height: 30px;
         background-color: #C6C6C6;
-        box-shadow: 1px 1px 30px gray;
+        box-shadow: 1px 1px 30px rgb(255, 255, 255);
         padding-right: 30px;
         padding-left: 20px ;
+        margin-bottom: 40px;
+        margin-left: 2%;
+        padding: 30px;
+
     }
     .post p{
         font-weight: 500;
+    }
+
+    .collapse{
+        width: 5%;
+        display: block;
+
+    }
+    .collapse-main{
+        width: 90%;
+        margin-left: 8%;
+    }
+    .paranone{
+        display: none;
+    }
+    .ico{
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .linked {
+        color: black;
+        text-decoration: none;
+    }
+    .linked:hover{
+        color: red;
+        
+    }
+    .thumbs{
+        display: flex;
+    }
+    .thumbs p{
+        margin-left: 20px;
+    }
+    .thumbs i{
+        margin-top: 20px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+
+    .like{
+        display: flex;
     }
 
     @media screen  and (min-width:1024px) {
@@ -200,6 +245,98 @@ body{
             width: 27%;
             margin: 30px;
             
+        }
+        
+    }
+
+    @media screen  and (min-width:1024px) {
+
+        .hamburger{
+        
+            margin-top: 25px;
+            margin-left: 80px;
+            
+            }
+
+        .Nav-link{
+    
+            display: flex;
+        }
+        .Nav-link a{
+            text-decoration: none;
+            padding: 10px;
+            color: red;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    
+        .Nav-link a:hover{
+            
+            color: white;
+            
+        }
+      
+        .Navbar{
+            
+            padding-left: 20px;
+            padding-right: 20px;
+            
+        }
+
+        .departments{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .units{
+            width: 27%;
+            margin: 30px;
+            
+        }
+        
+    }
+
+    @media screen and (max-width: 768px){
+
+        .collapse{
+            width: 0%;
+            display: none;
+    
+        }
+        .collapse-main{
+            width: 100%;
+            margin-left: 1%;
+        }
+        .paranone{
+            display: none;
+        }
+        .ico{
+            display: none;
+            
+        }
+
+        .left-nav img{
+            display: none;
+        }
+
+        .hamburger{
+            margin-top: 35%;
+            margin-left: 4%;
+        }
+    }
+
+        @media screen and (max-width: 369px){
+            .right{
+        
+                width: 20%;
+               
+        
+            }
+            .left{
+                width: 30%;
+
+
+
         }
         
     }
