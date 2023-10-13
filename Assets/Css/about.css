@@ -13,9 +13,12 @@ body {
   
   .column {
     float: left;
-    width: 33.3%;
+    width: 25%;
     margin-bottom: 16px;
     padding: 0 8px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
   }
   
   .card {
@@ -100,10 +103,11 @@ body {
   }
 
   .card img{
-    border-radius: 50%;
+   border-radius: 50%;
     max-height: 200px;
     max-width: 200px;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
     border-color: #000;
   }
   .text{

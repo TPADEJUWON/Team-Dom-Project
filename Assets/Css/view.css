@@ -148,13 +148,15 @@ body{
         width: 90%;
         text-align: justify;
         line-height: 30px;
-        background-color: #C6C6C6;
+        background-color: #e7dfdf;
         box-shadow: 1px 1px 30px rgb(255, 255, 255);
         padding-right: 30px;
         padding-left: 20px ;
         margin-bottom: 40px;
         margin-left: 2%;
         padding: 30px;
+        color: black;
+        font-size: 18px;
 
     }
     .post p{

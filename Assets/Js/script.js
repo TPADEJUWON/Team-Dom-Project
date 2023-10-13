@@ -74,3 +74,42 @@ sign.onclick = () =>{
 
       
 }
+
+// Typing Effect
+const words = [
+"Document Your Resolution", 
+"Get Help", 
+"Find Resolution", 
+"Collaborate with other Magicians",
+];
+const textElement = document.getElementById("text");
+const cursorElement = document.getElementById("cursor");
+let wordIndex = 0;
+let charIndex = 0;
+
+function type() {
+    if (wordIndex < words.length) {
+        if (charIndex <= words[wordIndex].length) {
+            textElement.textContent = words[wordIndex].substring(0, charIndex);
+            charIndex++;
+            setTimeout(type, 100); 
+        } else {
+           // wordIndex++;
+            charIndex = 0;
+            setTimeout(clearText, 500);
+        }
+    }
+}
+
+function clearText() {
+    if (textElement.textContent.length > 0) {
+        textElement.textContent = textElement.textContent.substring(0, textElement.textContent.length - 1);
+        setTimeout(clearText, 50); // Adjust the clearing speed (milliseconds)
+    } else {
+        wordIndex++;
+        setTimeout(type, 1000); 
+    }
+}
+
+type();
+

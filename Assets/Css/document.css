@@ -309,6 +309,7 @@ body{
         .departments{
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
         }
 
         .units{
