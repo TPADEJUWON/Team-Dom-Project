@@ -226,6 +226,69 @@ body{
         
     }
 
+    .stars {
+        margin: 20px;
+        display: inline-block;
+        direction: rtl;
+    }
+
+    .stars input[type="radio"] {
+        display: none;
+    }
+
+    .stars label {
+        font-size: 30px;
+        color: #ccc;
+        cursor: pointer;
+    }
+
+    .stars label:before {
+        content: "\2605";
+        font-size: 30px;
+    }
+
+    .stars input[type="radio"]:checked ~ label {
+        color: #FFD700;
+    }
+
+    .rate{
+        background-color: black;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        text-align: center;
+        padding: 40px;
+        margin-top: 5%;
+        height: 60vh;
+    }
+    #feed{
+        width: 60%;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+    }
+
+    .rate button{
+        background-color: red;
+        color: white;
+        border: none;
+        width: 100px;
+        min-height: 40px;
+        font-size: 1rem;
+        font-weight:600;
+        margin-top: 10px;
+        font-family: 'nunito', sans-serif;
+        cursor: pointer;
+
+    }
+    .no{
+        display: none;
+    }
+    .yes{
+        display: block;
+    }
+
 
     @media screen  and (min-width:1024px) {
 
@@ -318,44 +381,7 @@ body{
             margin: 30px;
             
         }
-        .main-bar{
-            display: flex;
-            justify-content: space-between;
-        }
-        .support-text{
-            width: 30%;
-            margin-top: 2%;
-            margin-left: 80px;
-        }
-        .support-text h2{
-            font-size: 45px;
-            color: red;
-            font-weight: 550;
-        }
-        .support-image{
-            margin-right: 80px;
-            margin-top: 0%;
-        }
-
-        .support-text button{
-            font-size: 15px;
-            color: white;
-            border-radius: 15px;
-            background-color: red;
-            border: none;
-            width: 120px;
-            height: 40px;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        .support-text p{
-            font-size: 1.1rem;
-            font-weight: 500;
-            line-height: normal;
-            color: black;
-            text-align: justify;
-
-        }
+        
 
         
     }

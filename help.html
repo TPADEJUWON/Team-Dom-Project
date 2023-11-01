@@ -3,36 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>helpPage</title>
     <link rel="stylesheet" href="/Assets/Css/help.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-<nav class="Navbar">
-    
-    <img src="/Assets/Images/sterlingtrds.png"/>
-
-    <div class="hamburger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
+    <nav class="Navbar">
+        <div class="left-nav">
+        <img src="/Assets/Images/sterlingtrds.png"/>
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
     </div>
-
+        <div class="logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <a id="out" href="/index.html">Logout</a>
+        </div>
+        
     
-    <div class="Nav-link">
-        <a href="/index.html">Home</a>
-        <a href="/About.html">About</a>
-    </div>
     
+    </nav>
+
+    <section class="main">
+
+        <!--For the left side bar-->
+        <div class="left">
+            <a class="linked" href="/document.html">
+            <div class="icons">
+                <i class="fas fa-home"></i>
+                <p class="text">Dashboard</p>
+                
+                
+            </div>
+        </a>
+        <a class="linked" href="/help.html">
+            <div class="icons ford">
+                <i class="fas fa-question-circle fa-lg"></i>
+                <p class="text2">Help</p>
+                
+                
+            </div>
+            </a>
+            <a class="linked" href="/rate.html">
+            <div class="icons ">
+                <i class="fas fa-star"></i>
+                <p class="text3">Rate Your Experience</p>
+                
+            </div>
+        </a>
+
+                <div class="foot">
+                <p>&copy; 2023 All right reserved</p>
+                <img src="/Assets/Images/sterlingblack.png"/>
+                
+            </div>
+
+            
+
+        </div>
 
 
-</nav>
+        <!--For the main page-->
+        <div class="main-bar">
+            <div class="support-text">
+            <h2>SUPPORT CENTER</h2>
+            <p>We have always been with you in every single click while using this application, if you are facing any challenge while using this app kindly reach out to us. We are just a mail away.</p>
+            <button onclick="location.href='mailto:tosin.adejuwon@sterling.ng';"> <i class="fas fa-envelope"></i> Contact Us</button>
+        </div>
 
-<div class="container">
-<h2>Get help</h2>
-<p>If you are having any issue while using this app, we a just a mail away. contact us @ teamdom@sterling.ng</p>
+        <div class="support-image">
+            <img src="/Assets/Images/custo.png" alt="support"/>
+        </div>
 
-</div>
+        </div>
 
+
+<script src="/Assets/Js/help.js"></script>
     
 </body>
 </html>
