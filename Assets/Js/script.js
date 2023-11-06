@@ -45,10 +45,10 @@ doc.onclick= () =>{
 
 // Define an array of image URLs
 const imageUrls = [
-    '/Assets/Images/guy.png',
-    '/Assets/Images/man.png',
-    '/Assets/Images/techg.png',
-    '/Assets/Images/techh.png',
+    'Assets/Images/guy.png',
+    'Assets/Images/man.png',
+    'Assets/Images/techg.png',
+    'Assets/Images/techh.png',
     
   ];
   
